@@ -12,7 +12,7 @@
     #aedfae 50%,
     #dbf0dc 100%
   ); */
-  background-image: url(/img/image/slider-1.jpg);
+  background-image: url(./img/image/slider-1.jpg);
   background-size: cover;
   background-position: top center;
   z-index: 1;
