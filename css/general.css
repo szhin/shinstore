@@ -1,0 +1,123 @@
+/* 
+Color: #2F9E44 button 
+background-color: #dcf1de;
+background-image: linear-gradient(43deg, #dcf1de 0%, #85c28c 46%, #0baf10 100%);
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  height: 100vh;
+  background-color: #f3f3f3;
+  color: #444;
+}
+
+/* ====================================== */
+/* ============== GENERAL================ */
+/* ====================================== */
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 3.2rem;
+  border-radius: 10px;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0);
+}
+
+/* ----------- HEADING ------------- */
+
+.heading-primary {
+  font-size: 6.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 5.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.heading-high {
+  font-size: 4.5rem;
+}
+/* ----------- BTN ------------- */
+
+.btn-nav:link,
+.btn-nav:visited {
+  background-color: #1e612a;
+  color: #fff;
+  margin-left: 2rem;
+}
+.btn-nav:hover,
+.btn-nav:active {
+  background-color: #000;
+}
+
+.btn-buy:link,
+.btn-buy:visited {
+  background-color: #109e2a;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0);
+}
+
+.btn-buy:hover,
+.btn-buy:active {
+  background-color: #000;
+}
+
+.btn-store:link,
+.btn-store:visited {
+  display: inline-block;
+  color: #000;
+  border-radius: 5rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn-store:hover,
+.btn-store:active {
+  background-color: #1d7128;
+}
+
+/* ----------- END BTN ------------- */
+/* ----------- START GRID ------------- */
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 13.5rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-center {
+  align-items: center;
+}
+
+/* ----------- END GRID ------------- */
