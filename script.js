@@ -101,26 +101,36 @@ allLinks.forEach(function (link) {
 });
 
 // Sticky /////////////////////////////////
-const sectionHeroEl = document.querySelector(".section-hero");
+// const sectionHeroEl = document.querySelector(".section-hero");
 
-const obs = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    console.log(ent);
+// const obs = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     console.log(ent);
 
-    if (ent.isIntersecting === false) {
-      document.body.classList.add("sticky");
-    }
+//     if (ent.isIntersecting === false) {
+//       document.body.classList.add("sticky");
+//     }
 
-    if (ent.isIntersecting === true) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    // In the viewport
-    root: null,
-    threshold: 0,
-    rootMargin: "-80px",
+//     if (ent.isIntersecting === true) {
+//       document.body.classList.remove("sticky");
+//     }
+//   },
+//   {
+//     // In the viewport
+//     root: null,
+//     threshold: 0,
+//     // rootMargin: "-80px",
+//   }
+// );
+// obs.observe(sectionHeroEl);
+const header = document.querySelector(".header");
+
+document.addEventListener("scroll", () => {
+  var scroll_position = window.scrollY;
+  if (scroll_position > 250) {
+    header.style.backgroundColor = "#fff";
+  } else {
+    header.style.backgroundColor = "transparent";
   }
-);
-obs.observe(sectionHeroEl);
+});

@@ -79,7 +79,8 @@ body {
 .btn-buy:link,
 .btn-buy:visited {
   background-color: #109e2a;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0);
+  /* box-shadow: 0px 5px 5px rgba(0, 0, 0); */
+  border: none;
 }
 
 .btn-buy:hover,
