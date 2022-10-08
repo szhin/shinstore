@@ -8,42 +8,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="./img/1.png">
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="general.css">
 
-    <title>PeShin</title>
+    <title>Macbook Store</title>
 </head>
 
 <body>
 
     <section class="section-hero">
         <header class="header">
-            <a class="logo" href="#">
+            <!-- <a class="logo" href="#">
                 <img width="111" height="120" src="/img/1.png" class="logo-img" alt="My logo">
-            </a>
+            </a> -->
+            <div class="logo">
+                <p class="logo-shop">macbook shop</p>
+            </div>
             <nav class="nav-list">
                 <ul class="nav-items">
                     <li><a class="nav-item" href="">About</a></li>
-                    <li><a class="nav-item" href="">Requirement</a></li>
-                    <li><a class="nav-item" href="">Design</a></li>
-                    <li><a class="nav-item" href="">Implement</a></li>
-                    <li><a class="btn btn-nav" href="">Get Started</a></li>
+                    <li><a class="nav-item" href="#section--2">List</a></li>
+                    <li><a class="nav-item" href="#section--3">Store</a></li>
+                    <li><a class="nav-item" href="#section--4">Review</a></li>
+                    <li><a class="btn btn-nav" href="#section--1">Get Started</a></li>
                 </ul>
             </nav>
         </header>
 
         <div class="hero">
             <div class="hero-text-box">
-                <a href="#section-list" class="btn btn-store">Macbook store</a>
+                <!-- <a href="#section-list" class="btn btn-store">Macbook store</a> -->
                 <h1 class="heading-primary">Feel free to choose and chill</h1>
                 <p class="hero-description">The most advanced processor for coders, designers, creators and
                     other.
                 </p>
-                <a href="#" class="btn btn-buy">Buy now</a>
+                <a href="#section--1" class="btn btn-buy">Buy now</a>
                 <div class="human-bought">
                     <div class="img-human">
                         <img width="32" height="32" src="/img/customers/customer-1.jpg" class="item-img item-img-1"
@@ -71,7 +73,7 @@
     </section>
     <!----------------------- START MAIN ---------------------->
     <main>
-        <section class="section-introduce">
+        <section class="section-introduce" id="section--1">
             <div class="container introduce">
                 <span class="subheading">choose us</span>
                 <h2 class="heading-secondary">Choose your favorite Macbook</h2>
@@ -111,10 +113,10 @@
             </div>
         </section>
         <!---------------------- START LIST -------------------->
-        <section class="section-list" id="section-list">
+        <section class="section-list" id="section--2">
             <div class="list-items">
                 <div class="list-store">
-                    <h3>PeShin Store</h3>
+                    <h3>Macbook Store</h3>
                     <p class="value">Total: 1000$</p>
                 </div>
 
@@ -203,12 +205,18 @@
             </div>
         </section>
         <!---------------------- END LIST -------------------->
+        <!------------------ START STORE ------------------>
+
+        <section class="section-store" id="section--3">
+            <div class="container store"></div>
+        </section>
+        <!------------------ END STORE ------------------>
         <!------------------ START DESCRIPTION ------------------>
-        <section class="section" id="section--3">
-            <div class="container section--3">
-                <span class="subheading">Not sure yet?</span>
+        <section class="section" id="section--4">
+            <div class="container section--4">
+                <span class="subheading">not sure yet?</span>
                 <h3 class="heading-secondary">
-                    Millions of Bankists are already making their lifes simpler.
+                    Millions of people have bought Macbooks from our Website
                 </h3>
             </div>
 
@@ -280,17 +288,17 @@
 
         <!------------------ END DESCRIPTION ------------------>
         <!------------------ START FOOTER ------------------>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container grid grid--footer">
                 <!------------------ 1 ------------------->
-                <div class="logo-col">
-                    <a href=""><img src="/img/1.png" class="logo-img" alt=""></a>
+                <div class="logo">
+                    <p class="logo-shop">macbook shop</p>
                 </div>
                 <!------------------ 2 ------------------->
                 <div class="footer-contact">
                     <h4>Contact us</h4>
-                    <p class="contact">123 Shin Street,
-                        <br>Thua Thien Hue Province, Viet Nam
+                    <p class="contact">NongLam University,
+                        <br>Ho Chi Minh City, Viet Nam
                     </p>
                     <p class="contact-info">012-123-4563</p>
                 </div>
@@ -315,7 +323,7 @@
                 </div>
                 <!-- ------------------------------------ -->
             </div>
-            <p class="copyright">Copyright © 2022 by PeShin,
+            <p class="copyright">Copyright © 2022 by Group4,
                 Inc. All rights reserved.
             </p>
         </footer>
