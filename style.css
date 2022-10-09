@@ -2,6 +2,7 @@
 /* ============== HERO ================ */
 /* ====================================== */
 .section-hero {
+  display: flex;
   position: relative;
   height: 100vh;
   color: rgb(118 255 157);
@@ -16,7 +17,6 @@
   background-size: cover;
   background-position: top center;
   z-index: 1;
-  padding: 20rem 0 10rem 0;
 }
 
 .section-hero::after {
@@ -27,7 +27,7 @@
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.6;
+  opacity: 0.7;
   z-index: -1;
 }
 
@@ -89,23 +89,6 @@
   color: #fff;
 }
 
-.img-hero {
-  width: 88%;
-}
-
-.btn-text {
-  display: inline-block;
-  background: none;
-  font-size: 1.7rem;
-  font-family: inherit;
-  font-weight: 500;
-  color: #008d1a;
-  border: none;
-  border-bottom: 1px solid currentColor;
-  cursor: pointer;
-  margin-left: 3rem;
-  transition: all 0.3s;
-}
 /* ====================================== */
 /* ============== HEADER ================ */
 /* ====================================== */
@@ -149,11 +132,17 @@
   list-style: none;
 }
 
-#header .nav-items .nav-item {
+.logo-shop {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: rgb(4, 139, 44);
+}
+
+.nav-item {
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-decoration: none;
-  color: rgb(3, 114, 45);
+  color: rgb(32 192 93);
   text-transform: uppercase;
   padding: 20px;
   display: block;
@@ -161,32 +150,26 @@
   list-style: none;
 }
 
-.logo-shop {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: rgb(0 255 75);
+.nav-item:hover {
+  color: #37b24d;
 }
 
-/* 
-.nav-items {
-  display: flex;
-  list-style: none;
-  align-items: center;
-}
+.hover {
+  --s: 0.1em; /* the thickness of the line */
+  --c: #37b24d; /* the color */
 
-.nav-item:link,
-.nav-item:visited {
-  font-size: 2rem;
-  color: #fff;
-  text-decoration: none;
-  margin-left: 2rem;
-  transition: all 0.3s;
+  /* color: #0000; */
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
 }
-
-.nav-item:hover,
-.nav-item:active {
-  color: rgb(56, 175, 86);
-} */
+.hover:hover {
+  --_p: 100%;
+}
 
 /* ----------END HEADER------------ */
 
@@ -201,14 +184,6 @@
 .introduce {
   display: inline-block;
   margin-bottom: 20rem;
-}
-
-.subheading {
-  display: inline-block;
-  color: crimson;
-  font-size: 2.8rem;
-  letter-spacing: 8.6px;
-  margin-bottom: 1.2rem;
 }
 
 .step-img-box {
@@ -384,6 +359,73 @@
 }
 
 /* ====================================== */
+/* ============== STORE ================ */
+/* ====================================== */
+
+.section-testimonials {
+  background-color: rgb(192 228 192);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  /* height: 100rem; */
+}
+
+.testimonials-container {
+  padding: 3rem 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+}
+
+.heading-secondary {
+  font-size: 5rem;
+  margin-bottom: 3.2rem;
+}
+
+.testimonial-img {
+  width: 5.5rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+  background-image: cover;
+}
+
+.gallery-item {
+  overflow: hidden;
+  background-position: center;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/* ====================================== */
 /* ============== LIST ================ */
 /* ====================================== */
 
@@ -526,7 +568,7 @@
   margin-bottom: 4rem;
 }
 
-.section {
+.section4 {
   padding: 9.6rem;
   border-top: 1px solid #ddd;
   transition: transform 1s, opacity 1s;
@@ -586,4 +628,13 @@
 .account-item a:hover,
 .resource-item a:hover {
   color: rgb(7, 108, 27);
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.lazy-img {
+  filter: blur(20px);
 }
