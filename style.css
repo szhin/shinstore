@@ -176,14 +176,14 @@
 /* ----------START INTRODUCE------------ */
 
 .section-introduce {
-  padding: 9.6rem;
+  padding: 9.6rem 9.6rem 18rem 9.6rem;
   /* border-bottom: 1px solid #000; */
   /* background-color: #dcf1de; */
 }
 
 .introduce {
   display: inline-block;
-  margin-bottom: 20rem;
+  margin-bottom: 9.6rem;
 }
 
 .step-img-box {
@@ -395,6 +395,7 @@
   font-size: 1.6rem;
   line-height: 1.8;
   margin-bottom: 1.6rem;
+  /* text-align: justify; */
 }
 
 .testimonial-name {
@@ -413,6 +414,7 @@
 .gallery-item {
   overflow: hidden;
   background-position: center;
+  border-radius: 10px;
 }
 
 .gallery-item img {
